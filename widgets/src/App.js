@@ -35,7 +35,7 @@ const options = [
 
 
 export default () => {
-  const [selected, setSelected] = useState(options[0]);
+  const [selected, setSelected] = useState(options[0]); //this is a piece of state
 
 
   return (
