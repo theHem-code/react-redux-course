@@ -44,7 +44,7 @@ export default () => {
         selected={selected}
         onSelectedChange={setSelected}
         options={options}
-       />
+      />
     </div>
   )
 };

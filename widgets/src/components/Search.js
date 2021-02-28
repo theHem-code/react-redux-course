@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
 const Search = () => {
@@ -18,8 +18,8 @@ const Search = () => {
           srsearch: term,
         },
       });
-
       setResults(data.query.search);
+      
     };
 
     if (term && !results.length) {
@@ -47,7 +47,7 @@ const Search = () => {
         </div>
         <div className="content">
           <div className="header">{result.title}</div>
-          <span dangerouslySetInnerHTML={{ __html: result.snippet}}></span>
+          <span dangerouslySetInnerHTML={{ __html: result.snippet }}></span>
         </div>
       </div>
     )
@@ -63,7 +63,7 @@ const Search = () => {
             value={term}
             onChange={(e) => setTerm(e.target.value)}
             className='input'
-           />
+          />
         </div>
       </div>
       <div className="ui celled list">{renderedResults}</div>
