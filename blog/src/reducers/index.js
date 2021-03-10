@@ -1,8 +1,10 @@
 import { combineReducers } from "redux";
 import postsReducer from "./postsReducer";
+import usersReducer from "./usersReducer";
 
 export default combineReducers({
-  posts: postsReducer
+  posts: postsReducer,
+  users: usersReducer,
 });
 
 // combineReducers accepts an object where the key names will become the keys in your root state object,
