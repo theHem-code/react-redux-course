@@ -33,3 +33,5 @@ const mapStateToProps = (state) => {
 // function to connect with the dispatch function to change the state
                                      //action creator
 export default connect(mapStateToProps, { selectSong })(SongList);
+
+// ...could also be written like connect(mapStateToProps, {selectSong: selectSong})(SongList);
